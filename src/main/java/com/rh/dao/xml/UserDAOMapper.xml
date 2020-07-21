@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rh.dao.UserDAO">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.rh.entity.User">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="salt" property="salt" />
+        <result column="sex" property="sex" />
+        <result column="bir" property="bir" />
+        <result column="location" property="location" />
+        <result column="age" property="age" />
+        <result column="salary" property="salary" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, password, salt, sex, bir, location, age, salary
+    </sql>
+
+</mapper>
